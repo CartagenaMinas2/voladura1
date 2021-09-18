@@ -26,9 +26,9 @@ def main():
     col1, col2 = st.columns([2, 2])
     
     with col2.expander("MODELOS PARA EL CÁLCULO DEL MÓDULO DE YOUNG", expanded=False):
-        image_patron1 = Image.open('imagenes\j3.jpg')
+        image_patron1 = Image.open('imagenes/j3.jpg')
         st.image(image_patron1)
-        image_patron2 = Image.open('imagenes\j2.jpg')
+        image_patron2 = Image.open('imagenes/j2.jpg')
         st.image(image_patron2)
     diametro_pulgada=col1.number_input('Diámetro pulg',value=6.75)
     densidad_explosivo=col1.number_input('Densidad Explosivo',value=1.2)
