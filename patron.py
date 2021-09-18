@@ -25,7 +25,7 @@ def main():
     st.markdown('## PATRON DE VOLADURA')
     col1, col2 = st.columns([2, 2])
     
-    with col2.expander("MODELOS PARA EL CÁLCULO DEL MÓDULO DE YOUNG", expanded=False):
+    with col2.expander("FORMULAS", expanded=False):
         image_patron1 = Image.open('imagenes/j3.jpg')
         st.image(image_patron1)
         image_patron2 = Image.open('imagenes/j2.jpg')
