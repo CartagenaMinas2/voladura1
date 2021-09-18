@@ -17,7 +17,7 @@ def main():
     #st.write('En minas subterráneas, el principio básico es proveer la suficiente cantidad de aire fresco a los frentes de trabajo y remover los contaminantes generados como el polvo respirable, productos de combustión del diesel, gases de la mina y el exceso de calor. Por lo que realizar el calculo correcto de esta cantidad es fundamental, en esta oportunidad nos vamos a basar en las leyes de Perú. ')
     col1c, col2c = st.columns([3, 1])
     col1c.markdown("<div style='text-align: justify'>Describe la naturaleza y la geología de la roca, el índice de volabilidad o “BI” (blastability index) que se obtiene como suma de los valores representativos de cuatro parámetros. Este índice debe de ser corregido según la mina en que se esté trabajando, acondicionándolo con factores para hacerlo más representativo de la roca a volar, si quieres más información visita el siguiente <a style='color:black; font-size:110% ;' href='https://www.smctesting.com/documents/mine-to-mill/The%20kuz%20ram%20fragmentation%20model%2020%20years%20on.pdf' target='_blank'><i class='fa fa-rocket'></i>enlace.</a> </div>", unsafe_allow_html=True)
-    image2 = Image.open('imagenes\ja.jpg')
+    image2 = Image.open('imagenes/ja.jpg')
     col2c.image(image2, caption='INDICE DE VOLABILIDAD')
     st.write("")
     st.markdown('### INPUTS')
@@ -32,10 +32,10 @@ def main():
     df_maciza_rocoso.index=["DENSIDAD DE ROCA","MODULO DE ELASTICIDAD","RESISTENCIA A COMPRESION SIMPLE","DIRECCION DE LA CARA LIBRE"]
     col2.write(df_maciza_rocoso)
     with col2.expander("FORMULAS PARA EL CALCULO", expanded=False):
-        image = Image.open('imagenes\young.jpg')
+        image = Image.open('imagenes/young.jpg')
         st.write("**Para el calculo se utilizo el modelo 3 (E=0.12*UCS)**")
         st.image(image, caption='MODELOS PARA EL CÁLCULO DEL MÓDULO DE YOUNG')
-        image3 = Image.open('imagenes\jfactores.jpg')
+        image3 = Image.open('imagenes/jfactores.jpg')
         st.image(image3, caption='Factores')
         
     col1a, col2a = st.columns([2, 2])
