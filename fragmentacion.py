@@ -25,13 +25,13 @@ def main():
     st.markdown('## MACIZO ROCOSO')
     col1, col2 = st.columns([2, 2])
     with col2.expander("FORMULAS", expanded=False):
-        image5 = Image.open('imagenes\j5.jpg')
+        image5 = Image.open('imagenes/j5.jpg')
         st.image(image5)
-        image6 = Image.open('imagenes\j6.jpg')
+        image6 = Image.open('imagenes/j6.jpg')
         st.image(image6)
-        image7 = Image.open('imagenes\j7.jpg')
+        image7 = Image.open('imagenes/j7.jpg')
         st.image(image7)
-        image8 = Image.open('imagenes\j8.jpg')
+        image8 = Image.open('imagenes/j8.jpg')
         st.image(image8)
         pass
     with col1.expander("MODELOS PARA EL CÁLCULO DEL MÓDULO DE YOUNG", expanded=False):
