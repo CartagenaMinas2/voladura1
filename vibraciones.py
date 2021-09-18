@@ -14,7 +14,7 @@ def main():
     #st.write('En minas subterráneas, el principio básico es proveer la suficiente cantidad de aire fresco a los frentes de trabajo y remover los contaminantes generados como el polvo respirable, productos de combustión del diesel, gases de la mina y el exceso de calor. Por lo que realizar el calculo correcto de esta cantidad es fundamental, en esta oportunidad nos vamos a basar en las leyes de Perú. ')
     col1A, col2A = st.columns([3, 1])
     col1A.markdown("<div style='text-align: justify'>Muchos autores han realizado una integración de las ondas provenientes desde cada zona de la carga, tomando en consideración la diferencia de tiempos en que las ondas llegan al punto P. Sin embargo, la velocidad máxima de partícula, y en específico el punto máximo de estrés en la roca no ocurre cuando las primeras ondas producto de la tronadura arriban al punto P. Esto acontece cuando las ondas se propagan a través del macizo rocoso y se encuentran con una cara libre (vacío) que genera una onda de tensión reflejada. Por lo tanto, las diferencias de tiempo entre las llegadas de ondas son tan cortas que simplemente no se consideran como un problema para los cálculos. La velocidad de vibración V resultante de una unidad de carga W a una distancia R es dada por:</div>", unsafe_allow_html=True)
-    image_patron15 = Image.open('imagenes/j15.jpg')
+    image_patron15 = Image.open('imagenes/J15.jpg')
     col2A.image(image_patron15)
     
     st.write("")
