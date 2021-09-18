@@ -1,20 +1,11 @@
-from tkinter import *
-from tkinter import ttk
-from tkinter import messagebox
-from tkinter import filedialog
-from typing import Type
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg,NavigationToolbar2Tk
-from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 import numpy as np
-import math
 import streamlit as st
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns; sns.set()
-import pandas as pd
-import streamlit.components.v1 as components
+
 
 
 #---------------------------------------------
