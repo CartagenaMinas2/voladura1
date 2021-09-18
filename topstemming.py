@@ -22,15 +22,15 @@ def main():
     #st.markdown("<div style='text-align: justify'>c. De carga: densidad, columna explosiva, longitud de taco, CARACTERÍSTICAs físico-químicas del explosivo.  </div>", unsafe_allow_html=True)
     #st.markdown("<div style='text-align: justify'>d. De tiempo: tiempos de retardo entre taladros, secuencia de salidas de los disparos.  </div>", unsafe_allow_html=True)
     col1a.markdown("<div style='text-align: justify'>Si no hay taco los gases se escaparán a la atmósfera arrastrando un alto porcentaje de energía, que debería actuar contra la roca. Si el taco es insuficiente, además de la fuga parcial de gases se producirá proyección de fragmentos, craterización y fuerte ruido por onda aérea. Si el taco es excesivo, la energía se concentrará en fragmentos al fondo del taladro, dejando gran cantidad de bloques o bolones en la parte superior, especialmente si el fisuramiento natural de la roca es muy espaciado, resultando una fragmentación irregular y poco esponjada y adicionalmente se generará fuerte vibración. Normalmente como relleno se emplean los detritos de la perforación que rodean al taladro, arcillas o piedra chancada fina y angulosa. En ocasiones en taladros inundados se deja el agua como taco cuando la columna de carga es baja (también en voladura subacuática). En la práctica su longitud usual es de 1/3 del largo total del taladro. Si se tiene en cuenta al burden y resistencia de la roca, el taco variará entre T = 0,7 B para material muy competente, como granito homogéneo, o en un radio de taco o burden que puede aproximarse a 1, es decir: T = B para material incompetente con fisuras y fracturas abiertas. En esta ocasión usaremos la formula de Rangos de distancia escalada.</div>", unsafe_allow_html=True)
-    image_patron12 = Image.open('imagenes\k8.jpg')
+    image_patron12 = Image.open('imagenes/k8.jpg')
     col2a.image(image_patron12)
     st.markdown('## PATRON DE VOLADURA')
     col1, col2, col3 = st.columns([2, 2, 2])
     
     with col2.expander("FORMULAS", expanded=False):
-        image_patron1 = Image.open('imagenes\K1.jpg')
+        image_patron1 = Image.open('imagenes/K1.jpg')
         st.image(image_patron1)
-        image_patron2 = Image.open('imagenes\K9.jpg')
+        image_patron2 = Image.open('imagenes/K9.jpg')
         st.image(image_patron2)
     longitud_taladro=col1.number_input('Largo del Taladro (m)',value=10.0)
     diametro_taladro=col1.number_input('Diametro del Taladro (pulg)',value=5.98)
@@ -78,20 +78,20 @@ def main():
     col2.write(f"**{espacios}El SDoB =** {round(SD,2)} (m/kg^1/3)**{espacios}**")
 
     if (0<SD<=0.62):
-        image_patron33 = Image.open('imagenes\K7.jpg')
+        image_patron33 = Image.open('imagenes/K7.jpg')
         col3.image(image_patron33)
     elif (0.64<SD<=0.90):
-        image_patron33 = Image.open('imagenes\K6.jpg')
+        image_patron33 = Image.open('imagenes/K6.jpg')
         col3.image(image_patron33)
     elif (0.90<SD<=1.42):
-        image_patron33 = Image.open('imagenes\K5.jpg')
+        image_patron33 = Image.open('imagenes/K5.jpg')
         col3.image(image_patron33)
     elif (1.42<SD<=1.82):
-        image_patron33 = Image.open('imagenes\K4.jpg')
+        image_patron33 = Image.open('imagenes/K4.jpg')
         col3.image(image_patron33)
     elif (1.82<SD<=2.42):
-        image_patron33 = Image.open('imagenes\K3.jpg')
+        image_patron33 = Image.open('imagenes/K3.jpg')
         col3.image(image_patron33)
     else:
-        image_patron33 = Image.open('imagenes\K2.jpg')
+        image_patron33 = Image.open('imagenes/K2.jpg')
         col3.image(image_patron33)
