@@ -18,7 +18,7 @@ def main():
     st.write("")
     st.markdown("<div style='text-align: justify'>a. Geométricos: altura, ancho y largo del banco, talud, cara libre. </div>", unsafe_allow_html=True)
     st.markdown("<div style='text-align: justify'>b. De perforación: diámetro y longitud del taladro, malla. </div>", unsafe_allow_html=True)
-    st.markdown("<div style='text-align: justify'>c. De carga: densidad, columna explosiva, longitud de taco, CARACTERÍSTICAs físico-químicas del explosivo.  </div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: justify'>c. De carga: densidad, columna explosiva, longitud de taco, características físico-químicas del explosivo.  </div>", unsafe_allow_html=True)
     st.markdown("<div style='text-align: justify'>d. De tiempo: tiempos de retardo entre taladros, secuencia de salidas de los disparos.  </div>", unsafe_allow_html=True)
     st.write("")
     st.markdown("<div style='text-align: justify'>A continuación, se describen las formulas para hallar los parámetros iniciales de diseño, los cuales deben de ser ajustados según la mina donde se esté trabajando.</div>", unsafe_allow_html=True)
