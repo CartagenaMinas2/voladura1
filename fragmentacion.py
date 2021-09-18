@@ -24,7 +24,7 @@ def main():
     st.write("")
     st.markdown('## MACIZO ROCOSO')
     col1, col2 = st.columns([2, 2])
-    with col2.expander("FORMULAS", expanded=False):
+    with col2.expander("FORMULA", expanded=False):
         image5 = Image.open('imagenes/j5.jpg')
         st.image(image5)
         image6 = Image.open('imagenes/j6.jpg')
