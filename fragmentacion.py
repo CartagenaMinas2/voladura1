@@ -34,7 +34,7 @@ def main():
         image8 = Image.open('imagenes/j8.jpg')
         st.image(image8)
         pass
-    with col1.expander("MODELOS PARA EL CÁLCULO DEL MÓDULO DE YOUNG", expanded=False):
+    with col1.expander("INPUTS", expanded=False):
         indice_volabilidad_A=st.number_input('Indice de Volabilidad A',value=7)
         altura_banco=st.number_input('Altura de Banco H',value=8)
         burden_B=st.number_input('Burden B',value=6.1)
